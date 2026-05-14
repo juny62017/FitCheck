@@ -19,6 +19,9 @@ let resultNumber =
 let resultText =
     document.querySelector(".result-text");
 
+let bmiFill =
+    document.querySelector(".bmi-fill");
+
 calculateBtn.onclick = function () {
 
     let heightValue =
@@ -40,6 +43,9 @@ calculateBtn.onclick = function () {
 
         resultText.style.color =
             "#d67b7b";
+
+        bmiFill.style.width =
+            "0%";
 
         return;
     }
@@ -68,6 +74,12 @@ calculateBtn.onclick = function () {
         resultText.style.color =
             "#d8a657";
 
+        bmiFill.style.width =
+            "30%";
+
+        bmiFill.style.background =
+            "#d8a657";
+
     }
 
     else if (
@@ -79,6 +91,12 @@ calculateBtn.onclick = function () {
             "Healthy Range";
 
         resultText.style.color =
+            "#7da67d";
+
+        bmiFill.style.width =
+            "60%";
+
+        bmiFill.style.background =
             "#7da67d";
 
     }
@@ -94,6 +112,12 @@ calculateBtn.onclick = function () {
         resultText.style.color =
             "#d8a657";
 
+        bmiFill.style.width =
+            "80%";
+
+        bmiFill.style.background =
+            "#d8a657";
+
     }
 
     else {
@@ -102,6 +126,12 @@ calculateBtn.onclick = function () {
             "Obese";
 
         resultText.style.color =
+            "#d67b7b";
+
+        bmiFill.style.width =
+            "100%";
+
+        bmiFill.style.background =
             "#d67b7b";
 
     }
@@ -123,6 +153,12 @@ resetBtn.onclick = function () {
         "Healthy Range";
 
     resultText.style.color =
+        "#7da67d";
+
+    bmiFill.style.width =
+        "20%";
+
+    bmiFill.style.background =
         "#7da67d";
 
 };
